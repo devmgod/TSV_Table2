@@ -1,0 +1,63 @@
+<!-- Nebojsa -->
+<!-- My Skype ID: live:.cid.a97fee18a75ee760 -->
+<!-- Please contact me via Skype -->
+
+{% extends 'main.html' %}
+
+{% block content %}
+
+<main class="layout layout--3">
+    <div class="container">
+
+        <!-- <h1>TSV_Table</h1> -->
+
+        <table id="myTable" class="display">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    {% for item in table_data %}
+                    {% if forloop.first %}
+                    {% for key, value in item.items %}
+                    <th>{{ key }}</th>
+                    {% endfor %}
+                    {% endif %}
+
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in table_data %}
+                <tr>
+                    <td>{{forloop.counter}}</td>
+                    {% for key, value in item.items %}
+
+                    <td>{{ value }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+
+        <!-- Activities End -->
+    </div>
+</main>
+<script>
+    // $(window).scroll(function () {
+    //     if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+    //         // ajax call get data from server and append to the div
+    //     }
+    // });
+    let table = new DataTable('#myTable', {
+        scrollY: 600,
+        scrollX: true,
+        scrollCollapse: true,
+        paging: false,
+        autoFill: true,
+        columnDefs: [{
+            "defaultContent": "-",
+            "targets": "_all"
+        }]
+    });
+</script>
+{% endblock %}

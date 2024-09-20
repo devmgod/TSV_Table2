@@ -1,0 +1,20 @@
+timestamp	device_id	hostname	user	process_name	event_type	file_path	action	status	ip_address	geo_location
+2024-09-17T08:23:45Z	device01	workstation-01	user1	chrome.exe	process_start	C:\Program Files\Google\Chrome\chrome.exe	started	success	192.168.1.10	New York, USA
+2024-09-17T08:24:30Z	device02	workstation-02	user2	winword.exe	process_start	C:\Program Files\Microsoft Office\WINWORD.EXE	started	success	192.168.1.11	Los Angeles, USA
+2024-09-17T08:25:15Z	device01	workstation-01	user1	explorer.exe	process_stop	C:\Windows\explorer.exe	stopped	success	192.168.1.10	New York, USA
+2024-09-17T08:26:00Z	device03	workstation-03	user3	teams.exe	process_start	C:\Program Files\Microsoft Teams\Teams.exe	started	success	192.168.1.12	Chicago, USA
+2024-09-17T08:26:45Z	device04	workstation-04	user4	notepad.exe	process_start	C:\Windows\system32\notepad.exe	started	failure	192.168.1.13	Houston, USA
+2024-09-17T08:27:30Z	device01	workstation-01	user1	cmd.exe	process_start	C:\Windows\system32\cmd.exe	started	success	192.168.1.10	New York, USA
+2024-09-17T08:28:15Z	device02	workstation-02	user2	excel.exe	process_start	C:\Program Files\Microsoft Office\EXCEL.EXE	started	success	192.168.1.11	Los Angeles, USA
+2024-09-17T08:29:00Z	device05	workstation-05	user5	firefox.exe	process_start	C:\Program Files\Mozilla Firefox\firefox.exe	started	success	192.168.1.14	San Francisco, USA
+2024-09-17T08:29:45Z	device03	workstation-03	user3	outlook.exe	process_stop	C:\Program Files\Microsoft Office\OUTLOOK.EXE	stopped	success	192.168.1.12	Chicago, USA
+2024-09-17T08:30:30Z	device04	workstation-04	user4	vlc.exe	process_start	C:\Program Files\VideoLAN\VLC\vlc.exe	started	success	192.168.1.13	Houston, USA
+2024-09-17T08:31:15Z	device01	workstation-01	user1	powershell.exe	process_start	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe	started	failure	192.168.1.10	New York, USA
+2024-09-17T08:32:00Z	device02	workstation-02	user2	wordpad.exe	process_start	C:\Program Files\Windows NT\Accessories\wordpad.exe	started	success	192.168.1.11	Los Angeles, USA
+2024-09-17T08:32:45Z	device06	workstation-06	user6	java.exe	process_start	C:\Program Files\Java\jre1.8.0_241\bin\java.exe	started	success	192.168.1.15	Seattle, USA
+2024-09-17T08:33:30Z	device01	workstation-01	user1	python.exe	process_start	C:\Program Files\Python\Python39\python.exe	started	success	192.168.1.10	New York, USA
+2024-09-17T08:34:15Z	device02	workstation-02	user2	python.exe	process_start	C:\Program Files\Python\Python39\python.exe	started	failure	192.168.1.11	Los Angeles, USA
+2024-09-17T08:35:00Z	device03	workstation-03	user3	git.exe	process_start	C:\Program Files\Git\bin\git.exe	started	success	192.168.1.12	Chicago, USA
+2024-09-17T08:35:45Z	device04	workstation-04	user4	putty.exe	process_stop	C:\Program Files\PuTTY\putty.exe	stopped	success	192.168.1.13	Houston, USA
+2024-09-17T08:36:30Z	device01	workstation-01	user1	vpn.exe	process_start	C:\Program Files\VPN\vpn.exe	started	success	192.168.1.10	New York, USA
+2024-09-17T08:37:15Z	device05	workstation-05	user5	notepad++.exe	process_start	C:\Program File
